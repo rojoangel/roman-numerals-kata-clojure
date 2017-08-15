@@ -1,7 +1,8 @@
 (ns roman-numerals.core)
 
 (def arabic-to-roman-digits
-  {5 "V"
+  {9 "IX"
+   5 "V"
    4 "IV"
    1 "I"})
 
