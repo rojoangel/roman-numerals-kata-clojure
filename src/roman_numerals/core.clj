@@ -1,6 +1,6 @@
 (ns roman-numerals.core)
 
-(def roman-for
+(def arabic-to-roman-digits
   {5 "V"
    4 "IV"
    1 "I"})
@@ -9,9 +9,9 @@
   (loop [remaining arabic
          roman ""]
     (if (>= remaining 5)
-      (recur (- remaining 5) (str roman (get roman-for 5)))
+      (recur (- remaining 5) (str roman (get arabic-to-roman-digits 5)))
       (if (>= remaining 4)
-        (recur (- remaining 4) (str roman (get roman-for 4)))
+        (recur (- remaining 4) (str roman (get arabic-to-roman-digits 4)))
         (if (>= remaining 1)
-          (recur (- remaining 1) (str roman (get roman-for 1)))
+          (recur (- remaining 1) (str roman (get arabic-to-roman-digits 1)))
           roman)))))
