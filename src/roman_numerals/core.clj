@@ -18,7 +18,8 @@
 
 (defn arabic->roman
   ([arabic]
-   (arabic->roman arabic "" arabic-to-roman-digits))
+   (when (< arabic 5000)
+     (arabic->roman arabic "" arabic-to-roman-digits)))
   ([arabic roman digits-to-process]
    (let [[arabic-digit roman-digit] (first digits-to-process)]
      (if (>= arabic arabic-digit)

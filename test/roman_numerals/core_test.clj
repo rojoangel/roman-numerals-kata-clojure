@@ -56,4 +56,6 @@
   (testing "arabic 1000 is roman M"
     (is (= "M" (arabic->roman 1000))))
   (testing "arabic 4999 is roman MMMMCMXCIX"
-    (is (= "MMMMCMXCIX" (arabic->roman 4999)))))
+    (is (= "MMMMCMXCIX" (arabic->roman 4999))))
+  (testing "cannot convert 5000 to roman"
+    (is (nil? (arabic->roman 5000)))))
