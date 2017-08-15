@@ -12,4 +12,10 @@
   (testing "arabic 4 is roman IV"
     (is (= "IV" (arabic->roman 4))))
   (testing "arabic 5 is roman V"
-    (is (= "V" (arabic->roman 5)))))
+    (is (= "V" (arabic->roman 5))))
+  (testing "arabic 6 is roman VI"
+    (is (= "VI" (arabic->roman 6))))
+  (testing "arabic 7 is roman VII"
+    (is (= "VII" (arabic->roman 7))))
+  (testing "arabic 8 is roman VIII"
+    (is (= "VIII" (arabic->roman 8)))))
