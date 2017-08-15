@@ -1,9 +1,7 @@
 (ns roman-numerals.core)
 
 (defn arabic->roman [arabic]
-  (if (= arabic 3)
-    "III"
-    (if (= arabic 2)
-      "II"
-      (if (= arabic 1)
-        "I"))))
+  (case arabic
+    3 "III"
+    2 "II"
+    1 "I"))
