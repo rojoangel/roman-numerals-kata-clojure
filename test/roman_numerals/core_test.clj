@@ -8,4 +8,6 @@
   (testing "arabic 2 is roman II"
     (is (= "II" (arabic->roman 2))))
   (testing "arabic 3 is roman III"
-    (is (= "III" (arabic->roman 3)))))
+    (is (= "III" (arabic->roman 3))))
+  (testing "arabic 4 is roman IV"
+    (is (= "IV" (arabic->roman 4)))))
