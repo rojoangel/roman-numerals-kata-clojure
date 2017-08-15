@@ -1,7 +1,8 @@
 (ns roman-numerals.core)
 
 (def arabic-to-roman-digits
-  {50 "L"
+  {90 "XC"
+   50 "L"
    40 "XL"
    10 "X"
    9 "IX"

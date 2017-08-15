@@ -34,4 +34,6 @@
   (testing "arabic 50 is roman L"
     (is (= "L" (arabic->roman 50))))
   (testing "arabic 89 is roman LXXXIX"
-    (is (= "LXXXIX" (arabic->roman 89)))))
+    (is (= "LXXXIX" (arabic->roman 89))))
+  (testing "arabic 90 is roman XC"
+    (is (= "XC" (arabic->roman 90)))))
