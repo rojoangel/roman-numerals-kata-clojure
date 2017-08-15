@@ -5,4 +5,5 @@
     "III"
     (if (= arabic 2)
       "II"
-      "I")))
+      (if (= arabic 1)
+        "I"))))
