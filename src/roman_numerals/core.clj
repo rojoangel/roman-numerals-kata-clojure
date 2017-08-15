@@ -2,6 +2,7 @@
 
 (def arabic-to-roman-digits
   (sorted-map-by >
+                 1000 "M"
                  900 "CM"
                  500 "D"
                  400 "CD"
